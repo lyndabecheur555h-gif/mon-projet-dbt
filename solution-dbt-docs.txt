@@ -1,0 +1,21 @@
+version: 2
+models:
+  - name: stg_orders
+    description: "Données des commandes nettoyées et transformées."
+    columns:
+      - name: order_id
+        description: "L'identifiant unique de chaque commande."
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "L'identifiant du client (clé étrangère)."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: order_date
+        description: "La date à laquelle la commande a été passée."
+      - name: status
+        description: "Le statut de la commande (ex: placed, shipped, completed)."
