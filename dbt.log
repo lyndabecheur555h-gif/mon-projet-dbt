@@ -1,0 +1,72 @@
+[0m10:17:53.210661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F75F1AF470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F75E6AAC30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F75F1AF740>]}
+
+
+============================== 10:17:53.228020 | 08c79548-dc01-4f55-a94c-9b098e0cb067 ==============================
+[0m10:17:53.228020 [info ] [MainThread]: Running with dbt=1.7.9
+[0m10:17:53.232048 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\wound\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\wound\\DBT_DEMO\\dbt_quest\\logs'}
+[0m10:17:53.234879 [info ] [MainThread]: dbt version: 1.7.9
+[0m10:17:53.235524 [info ] [MainThread]: python version: 3.12.9
+[0m10:17:53.238377 [info ] [MainThread]: python path: C:\Users\wound\DBT_DEMO\my-dbt-env\Scripts\python.exe
+[0m10:17:53.238377 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m10:17:53.616666 [info ] [MainThread]: Using profiles dir at C:\Users\wound\.dbt
+[0m10:17:53.616666 [info ] [MainThread]: Using profiles.yml file at C:\Users\wound\.dbt\profiles.yml
+[0m10:17:53.621489 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\wound\DBT_DEMO\dbt_quest\dbt_project.yml
+[0m10:17:53.621489 [info ] [MainThread]: adapter type: mysql
+[0m10:17:53.626770 [info ] [MainThread]: adapter version: 1.7.0
+[0m10:17:53.806642 [info ] [MainThread]: Configuration:
+[0m10:17:53.814695 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:17:53.814695 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:17:53.814695 [info ] [MainThread]: Required dependencies:
+[0m10:17:53.814695 [debug] [MainThread]: Executing "git --help"
+[0m10:17:53.880332 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:17:53.884006 [debug] [MainThread]: STDERR: "b''"
+[0m10:17:53.884006 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:17:53.884006 [info ] [MainThread]: Connection:
+[0m10:17:53.884006 [info ] [MainThread]:   server: localhost
+[0m10:17:53.884006 [info ] [MainThread]:   unix_socket: None
+[0m10:17:53.884006 [info ] [MainThread]:   port: 3306
+[0m10:17:53.884006 [info ] [MainThread]:   database: None
+[0m10:17:53.884006 [info ] [MainThread]:   schema: my_dbt_db
+[0m10:17:53.884006 [info ] [MainThread]:   user: root
+[0m10:17:53.894121 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m10:17:53.896157 [debug] [MainThread]: Acquiring new mysql connection 'debug'
+[0m10:17:53.896157 [debug] [MainThread]: Using mysql connection "debug"
+[0m10:17:53.896157 [debug] [MainThread]: On debug: select 1 as id
+[0m10:17:53.899768 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:55:50.611434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B493E2F950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B493C36AE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B490EDFB00>]}
+
+
+============================== 10:55:50.628147 | 65cf0db9-8a4b-486e-9390-38ee00306f63 ==============================
+[0m10:55:50.628147 [info ] [MainThread]: Running with dbt=1.7.9
+[0m10:55:50.628147 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\wound\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\wound\\DBT_DEMO\\dbt_quest\\logs'}
+[0m10:55:50.640927 [info ] [MainThread]: dbt version: 1.7.9
+[0m10:55:50.640927 [info ] [MainThread]: python version: 3.12.9
+[0m10:55:50.642941 [info ] [MainThread]: python path: C:\Users\wound\DBT_DEMO\my-dbt-env\Scripts\python.exe
+[0m10:55:50.642941 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m10:55:50.931665 [info ] [MainThread]: Using profiles dir at C:\Users\wound\.dbt
+[0m10:55:50.931665 [info ] [MainThread]: Using profiles.yml file at C:\Users\wound\.dbt\profiles.yml
+[0m10:55:50.931665 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\wound\DBT_DEMO\dbt_quest\dbt_project.yml
+[0m10:55:50.931665 [info ] [MainThread]: adapter type: mysql
+[0m10:55:50.931665 [info ] [MainThread]: adapter version: 1.7.0
+[0m10:55:51.123160 [info ] [MainThread]: Configuration:
+[0m10:55:51.123160 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:55:51.123160 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:55:51.129460 [info ] [MainThread]: Required dependencies:
+[0m10:55:51.130472 [debug] [MainThread]: Executing "git --help"
+[0m10:55:51.196625 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:55:51.196625 [debug] [MainThread]: STDERR: "b''"
+[0m10:55:51.196625 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:55:51.196625 [info ] [MainThread]: Connection:
+[0m10:55:51.196625 [info ] [MainThread]:   server: localhost
+[0m10:55:51.196625 [info ] [MainThread]:   unix_socket: None
+[0m10:55:51.196625 [info ] [MainThread]:   port: 3306
+[0m10:55:51.203156 [info ] [MainThread]:   database: None
+[0m10:55:51.205674 [info ] [MainThread]:   schema: my_dbt_db
+[0m10:55:51.205674 [info ] [MainThread]:   user: root
+[0m10:55:51.205674 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m10:55:51.211056 [debug] [MainThread]: Acquiring new mysql connection 'debug'
+[0m10:55:51.211056 [debug] [MainThread]: Using mysql connection "debug"
+[0m10:55:51.211056 [debug] [MainThread]: On debug: select 1 as id
+[0m10:55:51.211056 [debug] [MainThread]: Opening a new connection, currently in state init
